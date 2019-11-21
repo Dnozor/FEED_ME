@@ -1,0 +1,50 @@
+body {
+  background: url('background/cuisine.jpg');
+  background-repeat:no-repeat;
+  background-size:1380px;
+}
+
+.fill {
+  background-image: url('food/fish.png');
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 400px;
+  left: 850px;
+  cursor: pointer;
+}
+
+.hold {
+  opacity:50%;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+}
+
+.hovered {
+  opacity: 50%;
+}
+
+.rempli{
+  background-image: url('Bou/bou_non_50pixel.gif');
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 150px;
+  left: 350px;
+
+}
+.bou{
+  background-image: url('Bou/bou_statique.gif');
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 150px;
+  left: 350px;
+}
+
+.bouMiam{  }
