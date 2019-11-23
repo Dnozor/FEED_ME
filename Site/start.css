@@ -1,0 +1,14 @@
+*{
+	background-image:url(background/background.jpg);
+}
+#feed_me{
+	position:relative;
+	top:0px;
+	left:500px;}
+	#start{
+		position:relative;
+		top:350px;
+		left:150px;
+	}
+	#start:hover{
+	content:url(start_hover.png);
