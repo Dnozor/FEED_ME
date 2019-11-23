@@ -1,7 +1,7 @@
 body {
   background: url('background/cuisine.jpg');
   background-repeat:no-repeat;
-  background-size:1380px;
+  background-size: 100% 145%;
 }
 
 .fill {
@@ -43,8 +43,25 @@ body {
   position: relative;
   height: 250px;
   width: 250px;
-  top: 150px;
+  top: 115px;
   left: 350px;
 }
 
 .bouMiam{  }
+.next{
+  display:none;
+  position:relative;
+  z-index:1000;
+  opacity:0%;
+   -webkit-animation-name: apparition;
+   -webkit-animation-duration: 4s;
+   animation-delay:1s;
+  }
+  @-webkit-keyframes apparition {
+  from {opacity:0%;}
+    to:{opacity:100%};
+}
+  @keyframes apparition{
+    from{opacity:0%;}
+    to:{opacity:100%};
+  }
