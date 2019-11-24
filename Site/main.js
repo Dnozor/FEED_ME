@@ -1,4 +1,4 @@
-const fill = document.querySelector('.fill', ',fill_2');
+const fill = document.querySelector('.fill', '.fill_2');
 const empties = document.querySelectorAll('.empty');
 
 // Fill listeners

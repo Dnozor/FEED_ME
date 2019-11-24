@@ -8,22 +8,20 @@ body {
 
 .fill {
   background-image: url('food/broccoli.png');
-  display:inline-block;
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100px;
-  top: 400px;
-  left: 850px;
+  top: 60%;
+  left: 60%;
   cursor: pointer;
 }
 .fill_2 {
   background-image: url('food/caca.png');
-  display:inline-block;
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100px;
-  top: 400px;
-  left: 850px;
+  top: 60%;
+  left: 70%;
   cursor: pointer;
 }
 
