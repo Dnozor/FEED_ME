@@ -48,20 +48,32 @@ body {
 }
 
 .bouMiam{  }
+
 .next{
-  display:none;
+  background-image: url('nextlevel.gif');
+  position:relative;
+  height:328px;
+  width:500px;
+  left:450px;
+  display:inline-block;
   position:relative;
   z-index:1000;
-  opacity:0%;
-   -webkit-animation-name: apparition;
-   -webkit-animation-duration: 4s;
-   animation-delay:1s;
+  opacity:0;
+  visibility:hidden;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+   -webkit-animation-duration: 2s;
+   animation-delay:30s;
   }
-  @-webkit-keyframes apparition {
-  from {opacity:0%;}
-    to:{opacity:100%};
+        @keyframes fadein{
+    0% { opacity:0; visibility:hidden;}
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible;}
 }
-  @keyframes apparition{
-    from{opacity:0%;}
-    to:{opacity:100%};
-  }
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; visibility:hidden; }
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible; }
+}
+}
