@@ -1,5 +1,5 @@
 body {
-  background: url('background/Aquarium.png');
+  background: url('background/background_2.png');
   background-repeat:no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -9,8 +9,8 @@ body {
 .fill {
   background-image: url('food/fish.png');
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   top: 400px;
   left: 850px;
   cursor: pointer;
@@ -22,8 +22,8 @@ body {
 
 .empty {
   display: inline-block;
-  height: 160px;
-  width: 160px;
+  height: 250px;
+  width: 250px;
   margin: 10px;
 }
 
