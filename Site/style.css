@@ -1,7 +1,9 @@
 body {
   background: url('background/cuisine.jpg');
   background-repeat:no-repeat;
-  background-size: 100% 145%;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .fill {

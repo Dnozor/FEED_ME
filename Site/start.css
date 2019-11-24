@@ -1,6 +1,11 @@
-*{
-	background-image:url(background/background.jpg);
+body {
+  background: url('background/cuisine.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+background-attachment: fixed;
+
 }
+
 #feed_me{
 	position:relative;
 	top:0px;
