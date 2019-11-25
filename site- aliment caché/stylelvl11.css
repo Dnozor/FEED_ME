@@ -55,7 +55,7 @@ body {
   transform: translate(-50%, -50%);
   height:328px;
   width:500px;
-  display:inline-block;
+  display:none;
   position:absolute;
   z-index:1000;
   opacity:0;
@@ -63,7 +63,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:5s;
+   animation-delay:2s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
