@@ -1,5 +1,5 @@
 body {
-  background: url('background/background_11.png');
+  background: url('background/background_2.png');
   background-repeat:no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7,14 +7,12 @@ body {
 }
 
 .like {
-  background-image: url('food/banane.png');
-  background-size:50%;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top:60%;
-  left: 79%;
-  opacity:50%;
+  background-image: url('food/fish.png');
+  position: relative;
+  height: 100px;
+  width: 100px;
+  top: 80%;
+  left: 1%;
   cursor: pointer;
 }
 
@@ -27,7 +25,7 @@ body {
   position: absolute;
   height: 250px;
   width: 250px;
-  top: 60%;
+  top: 45%;
   left: 30%;
 }
 
@@ -36,7 +34,7 @@ body {
   position: absolute;
   height: 250px;
   width: 250px;
-  top: 60%;
+  top: 45%;
   left: 30%;
     }
 
@@ -45,7 +43,7 @@ body {
   position: absolute;
   height: 250px;
   width: 250px;
-  top: 60%;
+  top: 45%;
   left: 30%;
 }
 .next{
@@ -63,7 +61,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:20s;
+   animation-delay:2s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -92,7 +90,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:1s;
+   animation-delay:20s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
