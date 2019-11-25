@@ -61,7 +61,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:2s;
+   animation-delay:20s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -77,9 +77,10 @@ body {
 
 .tryagain{
   background-image: url('tryagain.png');
-  position:absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-attachment: fixed;
+  position:fixed;
+  top: 0%; left: 0%;
   height:100%;
   width:100%;
   position:inline-block;

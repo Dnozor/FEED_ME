@@ -61,7 +61,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:2s;
+   animation-delay:20s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -76,20 +76,21 @@ body {
 }
 
 .tryagain{
-  background-image: url('tryagain.gif');
-  position:absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  height:328px;
-  width:500px;
+  background-image: url('tryagain.png');
+  background-size: cover;
+  background-attachment: fixed;
+  position:fixed;
+  top: 0%; left: 0%;
+  height:100%;
+  width:100%;
   position:inline-block;
-  z-index:1000;
+  z-index:3;
   opacity:0;
   visibility:hidden;
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:20s;
+   animation-delay:1s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -103,4 +104,6 @@ body {
     100% { opacity:1; visibility:visible; }
 }
 }
+
+
 }
