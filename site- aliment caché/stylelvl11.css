@@ -1,5 +1,5 @@
 body {
-  background: url('background/background_8.png');
+  background: url('background/background_11.png');
   background-repeat:no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7,12 +7,13 @@ body {
 }
 
 .like {
-  background-image: url('food/golden_apple.png');
+  background-image: url('food/banane.png');
+  background-size:50%;
   position: absolute;
-  height: 100px;
-  width: 100px;
-  top:82%;
-  left: 78%;
+  height: 50px;
+  width: 50px;
+  top:60%;
+  left: 79%;
   opacity:50%;
   cursor: pointer;
 }
