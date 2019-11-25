@@ -41,7 +41,13 @@ function dragLeave() {
   this.className = ' bou';
 }
 
-function dragDrop() {
+function dragDrop(e) {
   this.className = 'bou_manger';
+  visible();
   setTimeout(() => (this.className = 'bou'), 3750);
+}
+function visible (){
+
+var x = document.getElementById("next2");
+  x.style.display = "inline-block";
 }
