@@ -83,13 +83,13 @@ body {
   height:328px;
   width:500px;
   position:inline-block;
-  z-index:1000;
+  z-index:3;
   opacity:0;
   visibility:hidden;
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:20s;
+   animation-delay:1s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
