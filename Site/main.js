@@ -1,5 +1,5 @@
 const fill = document.querySelector('.fill', '.fill_2');
-const empties = document.querySelectorAll('.empty');
+const empties = document.querySelectorAll('.bou');
 
 // Fill listeners
 fill.addEventListener('dragstart', dragStart);
@@ -21,24 +21,25 @@ function dragStart() {
 }
 
 function dragEnd() {
-  this.className = ' rempli';
-  this.parentElement.className = 'empty bouMiam';
+  this.className = 'fill';
 }
 
 function dragOver(e) {
   e.preventDefault();
+  this.className = 'bou_amazed';
 }
 
 function dragEnter(e) {
   e.preventDefault();
-  this.className += ' hovered';
+  this.className += ' bou_amazed';
 }
 
 function dragLeave() {
-  this.className = 'empty';
+  e.preventDefault();
+  this.className = ' bou';
 }
 
 function dragDrop() {
-  this.className = 'empty';
-  this.append(fill);
+  this.className = 'non';
+  setTimeout(() => (this.className = 'bou'), 2600);
 }

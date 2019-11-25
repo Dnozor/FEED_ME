@@ -29,18 +29,8 @@ body {
   opacity:50%;
 }
 
-.empty {
-  display: inline-block;
-  height: 250px;
-  width: 250px;
-  margin: 10px;
-}
 
-.hovered {
-  opacity: 50%;
-}
-
-.rempli{
+.non{
   background-image: url('Bou/bou_non_50pixel.gif');
   position: absolute;
   height: 250px;
@@ -60,6 +50,14 @@ body {
 
 .bouMiam{  }
 
+.bou_amazed{
+  background-image: url('Bou/bou_yeux_brille.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 45%;
+  left: 30%;
+}
 .next{
   background-image: url('nextlevel.gif');
   position:absolute;
