@@ -1,0 +1,77 @@
+body {
+  background: url('background/background_5.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.like {
+  background-image: url('food/pasteque.png');
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top:65%;
+  left: 25%;
+  cursor: pointer;
+}
+
+.hold {
+  opacity:50%;
+}
+
+.bou{
+  background-image: url('Bou/bou_statique.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 63%;
+  left: 30%;
+}
+
+
+.bou_manger{background-image: url('Bou/bou_manger.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 63%;
+  left: 30%;
+    }
+
+.bou_amazed{
+  background-image: url('Bou/bou_yeux_brille.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 63%;
+  left: 30%;
+}
+.next{
+  background-image: url('nextlevel.gif');
+  position:absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  height:328px;
+  width:500px;
+  display:inline-block;
+  position:absolute;
+  z-index:1000;
+  opacity:0;
+  visibility:hidden;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+   -webkit-animation-duration: 2s;
+   animation-delay:5s;
+  }
+        @keyframes fadein{
+    0% { opacity:0; visibility:hidden;}
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible;}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; visibility:hidden; }
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible; }
+}
+}

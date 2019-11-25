@@ -1,0 +1,22 @@
+body {
+  background: url('background/background_start2.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#feed_me{
+	 position: absolute;
+ 	 top: 30%; left: 50%;
+ 	 transform: translate(-50%, -50%);}
+
+
+#start{
+	 position: absolute;
+ 	 top: 50%; left: 50%;
+ 	 transform: translate(-50%, -50%);}
+
+
+#start:hover{
+	content:url(start_hover.png);

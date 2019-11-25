@@ -1,5 +1,5 @@
-const fill = document.querySelector('.fill', '.fill_2');
-const empties = document.querySelectorAll('.bou');
+fill = document.querySelector('.like');
+empties = document.querySelectorAll('.bou');
 
 // Fill listeners
 fill.addEventListener('dragstart', dragStart);
@@ -14,24 +14,26 @@ for (const empty of empties) {
 }
 
 // Drag Functions
-
+function drag(ev) {
+  ev.dataTransfer.setData(".like", ev.target.id);
+}
 function dragStart() {
   this.className += ' hold';
   setTimeout(() => (this.className = 'invisible'), 0);
 }
 
 function dragEnd() {
-  this.className = 'fill';
+  this.className = 'like';
 }
 
 function dragOver(e) {
   e.preventDefault();
   this.className = 'bou_amazed';
+
 }
 
 function dragEnter(e) {
   e.preventDefault();
-  this.className += ' bou_amazed';
 }
 
 function dragLeave() {
@@ -40,6 +42,6 @@ function dragLeave() {
 }
 
 function dragDrop() {
-  this.className = 'non';
-  setTimeout(() => (this.className = 'bou'), 2600);
+  this.className = 'bou_manger';
+  setTimeout(() => (this.className = 'bou'), 3750);
 }
