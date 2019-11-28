@@ -6,13 +6,13 @@ body {
 
 }
 
-.fill {
+.like {
   background-image: url('food/fish.png');
   position: relative;
   height: 100px;
   width: 100px;
-  top: 400px;
-  left: 850px;
+  top: 80%;
+  left: 1%;
   cursor: pointer;
 }
 
@@ -20,37 +20,32 @@ body {
   opacity:50%;
 }
 
-.empty {
-  display: inline-block;
-  height: 250px;
-  width: 250px;
-  margin: 10px;
-}
-
-.hovered {
-  opacity: 50%;
-}
-
-.rempli{
-  background-image: url('Bou/bou_non_50pixel.gif');
-  position: relative;
-  height: 250px;
-  width: 250px;
-  top: 150px;
-  left: 350px;
-
-}
 .bou{
   background-image: url('Bou/bou_statique.gif');
-  position: relative;
+  position: absolute;
   height: 250px;
   width: 250px;
-  top: 115px;
-  left: 350px;
+  top: 45%;
+  left: 30%;
 }
 
-.bouMiam{  }
 
+.bou_manger{background-image: url('Bou/bou_manger.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 45%;
+  left: 30%;
+    }
+
+.bou_amazed{
+  background-image: url('Bou/bou_yeux_brille.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 45%;
+  left: 30%;
+}
 .next{
   background-image: url('nextlevel.gif');
   position:absolute;
@@ -58,7 +53,7 @@ body {
   transform: translate(-50%, -50%);
   height:328px;
   width:500px;
-  display:inline-block;
+  display:none;
   position:absolute;
   z-index:1000;
   opacity:0;
@@ -66,7 +61,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:1s;
+   animation-delay:2s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -79,4 +74,36 @@ body {
     66% { opacity:0; visibility:hidden;}
     100% { opacity:1; visibility:visible; }
 }
+
+.tryagain{
+  background-image: url('tryagain.png');
+  background-size: cover;
+  background-attachment: fixed;
+  position:fixed;
+  top: 0%; left: 0%;
+  height:100%;
+  width:100%;
+  position:inline-block;
+  z-index:3;
+  opacity:0;
+  visibility:hidden;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+   -webkit-animation-duration: 2s;
+   animation-delay:20s;
+  }
+        @keyframes fadein{
+    0% { opacity:0; visibility:hidden;}
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible;}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; visibility:hidden; }
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible; }
+}
+}
+
+
 }

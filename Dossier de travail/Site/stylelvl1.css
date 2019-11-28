@@ -5,16 +5,23 @@ body {
   background-attachment: fixed;
 
 }
-#tutorial{
-  margin-left:40%;
-}
+
 .like {
   background-image: url('food/broccoli.png');
   position: absolute;
   height: 100px;
   width: 100px;
   top: 60%;
-  left: 90%;
+  left: 60%;
+  cursor: pointer;
+}
+.dont {
+  background-image: url('food/caca.png');
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 60%;
+  left: 70%;
   cursor: pointer;
 }
 
@@ -22,6 +29,16 @@ body {
   opacity:50%;
 }
 
+
+.non{
+  background-image: url('Bou/bou_non_50pixel.gif');
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 45%;
+  left: 30%;
+
+}
 .bou{
   background-image: url('Bou/bou_statique.gif');
   position: absolute;
@@ -30,7 +47,6 @@ body {
   top: 45%;
   left: 30%;
 }
-
 
 .bou_manger{background-image: url('Bou/bou_manger.gif');
   position: absolute;
@@ -55,7 +71,7 @@ body {
   transform: translate(-50%, -50%);
   height:328px;
   width:500px;
-  display:none;
+  display:inline-block;
   position:absolute;
   z-index:1000;
   opacity:0;
@@ -63,7 +79,7 @@ body {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
    -webkit-animation-duration: 2s;
-   animation-delay:2s;
+   animation-delay:30s;
   }
         @keyframes fadein{
     0% { opacity:0; visibility:hidden;}
@@ -76,36 +92,4 @@ body {
     66% { opacity:0; visibility:hidden;}
     100% { opacity:1; visibility:visible; }
 }
-
-.tryagain{
-  background-image: url('tryagain.png');
-  background-size: cover;
-  background-attachment: fixed;
-  position:fixed;
-  top: 0%; left: 0%;
-  height:100%;
-  width:100%;
-  position:inline-block;
-  z-index:3;
-  opacity:0;
-  visibility:hidden;
-  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-    animation: 3s ease 0s normal forwards 1 fadein;
-   -webkit-animation-duration: 2s;
-   animation-delay:20s;
-  }
-        @keyframes fadein{
-    0% { opacity:0; visibility:hidden;}
-    66% { opacity:0; visibility:hidden;}
-    100% { opacity:1; visibility:visible;}
-}
-
-@-webkit-keyframes fadein{
-    0% { opacity:0; visibility:hidden; }
-    66% { opacity:0; visibility:hidden;}
-    100% { opacity:1; visibility:visible; }
-}
-}
-
-
 }
