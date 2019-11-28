@@ -1,0 +1,82 @@
+body {
+  background: url('background/background_2.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.fill {
+  background-image: url('food/fish.png');
+  position: relative;
+  height: 100px;
+  width: 100px;
+  top: 400px;
+  left: 850px;
+  cursor: pointer;
+}
+
+.hold {
+  opacity:50%;
+}
+
+.empty {
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+}
+
+.hovered {
+  opacity: 50%;
+}
+
+.rempli{
+  background-image: url('Bou/bou_non_50pixel.gif');
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 150px;
+  left: 350px;
+
+}
+.bou{
+  background-image: url('Bou/bou_statique.gif');
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 115px;
+  left: 350px;
+}
+
+.bouMiam{  }
+
+.next{
+  background-image: url('nextlevel.gif');
+  position:absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  height:328px;
+  width:500px;
+  display:inline-block;
+  position:absolute;
+  z-index:1000;
+  opacity:0;
+  visibility:hidden;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+   -webkit-animation-duration: 2s;
+   animation-delay:1s;
+  }
+        @keyframes fadein{
+    0% { opacity:0; visibility:hidden;}
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible;}
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; visibility:hidden; }
+    66% { opacity:0; visibility:hidden;}
+    100% { opacity:1; visibility:visible; }
+}
+}
